@@ -11,4 +11,4 @@ AutoHotkey(V2) script which detects IME status of current window (for Korean)
 2. Run script directly using AutoHotkey. Or you can compile the script and make your own executables using the compiler which comes with the AutoHotkey program itself.
 
 #### Possible applications?
-1. editors which use alphabets as commands (like Vim)
+1. Editors which use English alphabets as commands (like Vim)
