@@ -16,6 +16,9 @@ $Esc::
 }
 #HotIf
 
+; left ctrl <-> capslock
+CapsLock::LControl
+LControl::CapsLock
 
 IMECheckHangul()  ; 0: 영어, 1: 한글
 {
