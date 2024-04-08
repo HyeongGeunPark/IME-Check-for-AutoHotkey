@@ -14,11 +14,34 @@ $Esc::
     Send "{Escape}"
     return
 }
+
+; arrowkeys -> Alt + j k l ;
+!h::
+{
+	Send "{Left}"
+	Return
+}
+!j::
+{
+	Send "{Down}"
+	Return
+}
+!k::
+{
+	Send "{Up}"
+	Return
+}
+!l::
+{
+	Send "{Right}"
+	Return
+}
 #HotIf
 
 ; left ctrl <-> capslock
-CapsLock::LControl
-LControl::CapsLock
+$CapsLock::LControl
+$LControl::CapsLock
+
 
 IMECheckHangul()  ; 0: 영어, 1: 한글
 {
