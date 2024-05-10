@@ -15,6 +15,33 @@ $Esc::
     return
 }
 
+$^[::
+{
+	if(IMECheckHangul()){
+		Send "{VK15}"
+	}
+	Send "^["
+	return
+}
+
+$\::
+{
+	if(IMECheckHangul()){
+		Send "{VK15}"
+	}
+	Send "\"
+	return
+}
+
+$+'::
+{
+	if(IMECheckHangul()){
+		Send "{VK15}"
+	}
+	Send "+'"
+	return
+}
+
 ; arrowkeys -> Alt + j k l ;
 !h::
 {
@@ -41,6 +68,19 @@ $Esc::
 ; left ctrl <-> capslock
 $CapsLock::LControl
 $LControl::CapsLock
+
+; PRTSC <-> DEL
+$PrintScreen::Delete
+$Delete::PrintScreen
+
+; mouse back -> pgdown
+; mouse forward -> pgup
+; when bluestack is on
+#HotIf WinActive("ahk_exe HD-Player.exe")
+$XButton1::PgDn
+$XButton2::PgUp
+
+#HotIf
 
 
 IMECheckHangul()  ; 0: 영어, 1: 한글
