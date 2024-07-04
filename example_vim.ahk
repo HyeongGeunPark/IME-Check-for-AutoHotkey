@@ -66,19 +66,19 @@ $+'::
 #HotIf
 
 ; left ctrl <-> capslock
-$CapsLock::LControl
-$LControl::CapsLock
+CapsLock::LControl
+LControl::CapsLock
 
 ; PRTSC <-> DEL
-$PrintScreen::Delete
-$Delete::PrintScreen
+;PrintScreen::Delete
+;Delete::PrintScreen
 
 ; mouse back -> pgdown
 ; mouse forward -> pgup
 ; when bluestack is on
 #HotIf WinActive("ahk_exe HD-Player.exe")
-$XButton1::PgDn
-$XButton2::PgUp
+XButton1::PgDn
+XButton2::PgUp
 
 #HotIf
 
