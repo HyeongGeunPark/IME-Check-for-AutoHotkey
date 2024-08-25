@@ -64,7 +64,6 @@ $+'::
 	Return
 }
 #HotIf
-
 ; left ctrl <-> capslock
 CapsLock::LControl
 LControl::CapsLock
@@ -76,7 +75,7 @@ LControl::CapsLock
 ; mouse back -> pgdown
 ; mouse forward -> pgup
 ; when bluestack is on
-#HotIf WinActive("ahk_exe HD-Player.exe")
+#HotIf WinActive("ahk_exe HD-Player.exe") || WinActive("ahk_exe MuMuPlayer.exe")
 XButton1::PgDn
 XButton2::PgUp
 
