@@ -19,6 +19,9 @@ AutoHotkey(V2) script which detects IME status of current window (for Korean)
 #### Possible applications?
 1. Editors which use English alphabets as commands (like Vim)
 
+#### 사용 예시
+1. vim과 같이 영어 알파벳을 명령으로 사용하는 에디터. 한글 입력 중 \<ESC\>로 normal mode로 전환하면 자동으로 영어 입력으로 바뀌게 할 수 있다.
+
 #### example script explanation
 1. Load windows imm api as dll.
 2. Using ImmGetDefaultIMEWnd, get the handle of IME window of current active window.
