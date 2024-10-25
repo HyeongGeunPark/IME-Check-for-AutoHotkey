@@ -5,7 +5,7 @@ AutoHotkey(V2) script which detects IME status of current window (for Korean)
 
 #### Refer to / 참고
 1. <https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md>
-2. <https://soooprmx.com/autohotkey-%ED%95%9C%EC%98%81-%EC%83%81%ED%83%9C-%EA%B0%90%EC%A7%80%ED%95%98%EA%B8%B0/>
+2. ~~<https://soooprmx.com/autohotkey-%ED%95%9C%EC%98%81-%EC%83%81%ED%83%9C-%EA%B0%90%EC%A7%80%ED%95%98%EA%B8%B0/>~~(broken link, I cannot find this document anymore)
 
 #### How to Use
 1. Download and install [AutoHotkey](https://www.autohotkey.com/)
