@@ -64,6 +64,7 @@ $+'::
 	Return
 }
 #HotIf
+
 ; left ctrl <-> capslock
 CapsLock::LControl
 LControl::CapsLock
