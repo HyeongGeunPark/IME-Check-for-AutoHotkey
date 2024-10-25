@@ -5,7 +5,7 @@ AutoHotkey(V2) script which detects IME status of current window (for Korean)
 
 #### Refer to / 참고
 1. <https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md>
-2. <https://soooprmx.com/autohotkey-%ED%95%9C%EC%98%81-%EC%83%81%ED%83%9C-%EA%B0%90%EC%A7%80%ED%95%98%EA%B8%B0/>
+2. ~~<https://soooprmx.com/autohotkey-%ED%95%9C%EC%98%81-%EC%83%81%ED%83%9C-%EA%B0%90%EC%A7%80%ED%95%98%EA%B8%B0/>~~(broken link, I cannot find this document anymore)
 
 #### How to Use
 1. Download and install [AutoHotkey](https://www.autohotkey.com/)
@@ -19,18 +19,21 @@ AutoHotkey(V2) script which detects IME status of current window (for Korean)
 #### Possible applications?
 1. Editors which use English alphabets as commands (like Vim)
 
+#### 사용 예시
+1. vim과 같이 영어 알파벳을 명령으로 사용하는 에디터. 한글 입력 중 \<ESC\>로 normal mode로 전환하면 자동으로 영어 입력으로 바뀌게 할 수 있다.
+
 #### example script explanation
 1. Load windows imm api as dll.
 2. Using ImmGetDefaultIMEWnd, get the handle of IME window of current active window.
 3. Send WM_IME_CONTROL(0x0283) message to the handle to get currrent imc conversion mode(IMC_GETCONVERSIONMODE, 0x0001) and receive the return value.
 4. imc conversion mode 0 means "alphanumeric".
-5. If the imc conversion mode is not 0, map <ESC> keystroke to <한/영> -> <ESC>.
+5. If the imc conversion mode is not 0, map \<ESC\> keystroke to <한/영> -> \<ESC\>.
 6. Unload windows imm api when the script is terminated.
 #### 예제 설명
 1. windwos imm api를 로드한다.
 2. ImmGetDefaultIMEWnd api를 이용하여 현재 윈도우의 IME 윈도우 핸들을 가져온다.
 3. 가져온 IME 윈도우 핸들을 이용하여 WM_IME_CONTROL 메세지를 IMC_GETCONVERSIONMODE 인자를 줘서 보내고, 리턴값을 받는다.
 4. imc conversion mode 0는 "alphanumeric"을 의미한다.
-5. imc conversion mode가 0이 아니면 <ESC> 입력을 <한/영> -> <ESC>로 매핑한다.
+5. imc conversion mode가 0이 아니면 \<ESC\> 입력을 \<한/영\> -> \<ESC\>로 매핑한다.
 6. 스크립트가 끝날 때 windows imm api를 언로드한다.
 
