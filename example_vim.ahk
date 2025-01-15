@@ -34,7 +34,7 @@ $\::
 }
 
 $+'::
-{
+
 	if(IMECheckHangul()){
 		Send "{VK15}"
 	}
@@ -76,9 +76,9 @@ Delete::PrintScreen
 ; mouse back -> pgdown
 ; mouse forward -> pgup
 ; when bluestack is on
-#HotIf WinActive("ahk_exe HD-Player.exe") || WinActive("ahk_exe MuMuPlayer.exe")
-XButton1::PgDn
-XButton2::PgUp
+; #HotIf WinActive("ahk_exe HD-Player.exe") || WinActive("ahk_exe MuMuPlayer.exe")
+; XButton1::PgDn
+; XButton2::PgUp
 
 #HotIf
 
