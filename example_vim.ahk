@@ -34,7 +34,7 @@ $\::
 }
 
 $+'::
-
+{
 	if(IMECheckHangul()){
 		Send "{VK15}"
 	}
