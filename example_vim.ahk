@@ -33,14 +33,15 @@ $\::
 	return
 }
 
-$+'::
-{
-	if(IMECheckHangul()){
-		Send "{VK15}"
-	}
-	Send "+'"
-	return
-}
+; change IME state to English mode on <"> key input
+;$+'::
+;{
+;	if(IMECheckHangul()){
+;		Send "{VK15}"
+;	}
+;	Send "+'"
+;	return
+;}
 
 ; arrowkeys -> Alt + j k l ;
 !h::
