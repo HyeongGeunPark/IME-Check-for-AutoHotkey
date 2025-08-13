@@ -66,8 +66,8 @@ $+'::
 #HotIf
 
 ; left ctrl <-> capslock
-CapsLock::LControl
-LControl::CapsLock
+;CapsLock::LControl
+;LControl::CapsLock
 
 ; PRTSC <-> DEL
 ;PrintScreen::Delete
