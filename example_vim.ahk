@@ -76,7 +76,7 @@ $+'::
 ; mouse back -> pgdown
 ; mouse forward -> pgup
 ; when bluestack is on
-#HotIf WinActive("ahk_exe HD-Player.exe") || WinActive("ahk_exe MuMuPlayer.exe")
+#HotIf WinActive("ahk_exe HD-Player.exe") || WinActive("ahk_exe MuMuPlayer.exe") || WinActive("ahk_exe MuMuNxDevice.exe")
 XButton1::PgDn
 XButton2::PgUp
 
