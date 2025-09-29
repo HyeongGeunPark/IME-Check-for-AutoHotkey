@@ -1,11 +1,12 @@
 ﻿imm32 := DllCall("LoadLibrary", "Str", "imm32.dll", "Ptr")
 
-#HotIf WinActive("ahk_exe Code.exe") || WinActive("ahk_exe Obsidian.exe") || WinActive("ahk_exe devenv.exe") || WinActive("ahk_exe OpenConsole.exe") || WinActive("ahk_exe WindowsTerminal.exe")
+#HotIf WinActive("ahk_exe Code.exe") || WinActive("ahk_exe Obsidian.exe") || WinActive("ahk_exe devenv.exe") || WinActive("ahk_exe OpenConsole.exe") || WinActive("ahk_exe WindowsTerminal.exe") || WinActive("ahk_exe stm32cubeide.exe")
 ; Code.exe = Visual Studio Code
 ; Obsidian.exe = Obsidian (vim editor key setting)
 ; devenv.exe = Visual Studio 2022
 ; cmd.exe = command prompt
 ; WindowsTerminal.exe = Windows Powershell
+; stm32cubeide.exe = STM 32 CubeIDE
 $Esc::
 {
     if(IMECheckHangul()){
