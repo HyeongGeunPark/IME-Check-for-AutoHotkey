@@ -72,8 +72,8 @@ $\::
 ;LControl::CapsLock
 
 ; PRTSC <-> DEL
-PrintScreen::Delete
-Delete::PrintScreen
+;PrintScreen::Delete
+;Delete::PrintScreen
 
 ; mouse back -> pgdown
 ; mouse forward -> pgup
